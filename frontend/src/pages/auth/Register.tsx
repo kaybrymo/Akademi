@@ -17,6 +17,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { apiEnabled, apiRegister, apiErrorMessage } from '@/lib/api';
 import GoogleAuthModal, { GoogleLogo } from '@/components/ui/GoogleAuthModal';
 
 export default function Register() {
@@ -36,6 +37,8 @@ export default function Register() {
   const [subject, setSubject] = useState('Mathematics & Further Maths');
   const [rate, setRate] = useState('3500');
   const [experience, setExperience] = useState('3+ years');
+  const [authError, setAuthError] = useState('');
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     if (searchParams.get('role') === 'tutor') {
@@ -82,8 +85,23 @@ export default function Register() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setAuthError('');
+
+    // Create the real account first when the API is configured.
+    let apiProfile: Awaited<ReturnType<typeof apiRegister>> | null = null;
+    if (apiEnabled) {
+      setSubmitting(true);
+      try {
+        apiProfile = await apiRegister({ name: name.trim(), email: email.trim(), password, role });
+      } catch (err) {
+        setAuthError(apiErrorMessage(err, 'Could not create your account.'));
+        return;
+      } finally {
+        setSubmitting(false);
+      }
+    }
     
     const cleanName = name.trim() || (role === 'tutor' ? 'Dr. Babatunde Lawal' : 'Chiamaka Eze');
     const nameParts = cleanName.split(' ');
@@ -92,6 +110,7 @@ export default function Register() {
       : cleanName.substring(0, 2).toUpperCase();
 
     const authUser = {
+      ...(apiProfile ?? {}),
       name: cleanName,
       email: email.trim() || (role === 'tutor' ? 'tutor@akademi.com' : 'chiamaka@akademi.com'),
       role: role,
@@ -464,9 +483,16 @@ export default function Register() {
               </motion.div>
             )}
 
+            {authError && (
+              <p role="alert" className="text-xs font-semibold text-rose-600 bg-rose-50 border border-rose-100 rounded-xl px-3 py-2">
+                {authError}
+              </p>
+            )}
+
             <button 
               type="submit" 
-              className="w-full bg-[#0F5338] hover:bg-[#0A3D29] text-white rounded-2xl h-12 font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 mt-4 active:scale-[0.98] cursor-pointer"
+              disabled={submitting}
+              className="w-full bg-[#0F5338] hover:bg-[#0A3D29] disabled:opacity-60 text-white rounded-2xl h-12 font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 mt-4 active:scale-[0.98] cursor-pointer"
             >
               <span>{role === 'tutor' ? 'Submit Educator Application' : 'Create Student Account'}</span>
               <ArrowRight className="h-4 w-4" />
