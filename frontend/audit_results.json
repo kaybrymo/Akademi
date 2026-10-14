@@ -1,0 +1,2870 @@
+{
+  "routes": [
+    "/",
+    "/courses",
+    "/communities",
+    "/community",
+    "/communities/:id",
+    "/community/:id",
+    "/tutors",
+    "/tutors/:id",
+    "/tutor/:id",
+    "/login",
+    "/register",
+    "/forgot-password",
+    "sessions",
+    "students",
+    "communities",
+    "community",
+    "communities/:id",
+    "community/:id",
+    "recordings",
+    "courses",
+    "messages",
+    "billing",
+    "settings",
+    "notifications",
+    "users",
+    "tutors",
+    "sessions",
+    "recordings",
+    "subjects",
+    "communities",
+    "payments",
+    "settings",
+    "*"
+  ],
+  "links": [
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 163,
+      "to": "/"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 215,
+      "to": "/dashboard"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 226,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 238,
+      "to": "/courses"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 250,
+      "to": "/"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 352,
+      "to": "/dashboard"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 281,
+      "to": "/"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 290,
+      "to": "/admin"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 318,
+      "to": "/"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 371,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 379,
+      "to": "/admin"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 428,
+      "to": "/admin"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 576,
+      "to": "/dashboard/notifications"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 645,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 655,
+      "to": "/admin"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 668,
+      "to": "/dashboard/settings"
+    },
+    {
+      "file": "\\components\\layout\\Footer.tsx",
+      "line": 26,
+      "to": "/courses"
+    },
+    {
+      "file": "\\components\\layout\\Footer.tsx",
+      "line": 27,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\components\\layout\\Footer.tsx",
+      "line": 28,
+      "to": "/dashboard"
+    },
+    {
+      "file": "\\components\\layout\\Footer.tsx",
+      "line": 30,
+      "to": "/admin"
+    },
+    {
+      "file": "\\components\\layout\\Footer.tsx",
+      "line": 34,
+      "to": "/"
+    },
+    {
+      "file": "\\components\\layout\\Footer.tsx",
+      "line": 35,
+      "to": "/"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 66,
+      "to": "/"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 75,
+      "to": "/courses"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 77,
+      "to": "/communities"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 79,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 91,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 104,
+      "to": "/admin"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 112,
+      "to": "/admin/communities"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 144,
+      "to": "/login"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 150,
+      "to": "/register"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 173,
+      "to": "/"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 184,
+      "to": "/courses"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 186,
+      "to": "/communities"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 188,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 205,
+      "to": "/login"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 206,
+      "to": "/register"
+    },
+    {
+      "file": "\\components\\layout\\ProtectedRoute.tsx",
+      "line": 35,
+      "to": "/admin"
+    },
+    {
+      "file": "\\components\\layout\\ProtectedRoute.tsx",
+      "line": 37,
+      "to": "/dashboard"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 897,
+      "to": "/dashboard/sessions"
+    },
+    {
+      "file": "\\components\\ui\\LessonNotesModal.tsx",
+      "line": 822,
+      "to": "/dashboard/messages"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 259,
+      "to": "/communities"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 88,
+      "to": "/admin/payments"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 131,
+      "to": "/admin/tutors"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 147,
+      "to": "/admin/payments"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 163,
+      "to": "/admin/subjects"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 178,
+      "to": "/admin/communities"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 252,
+      "to": "/admin/sessions"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 299,
+      "to": "/admin/tutors"
+    },
+    {
+      "file": "\\pages\\auth\\ForgotPassword.tsx",
+      "line": 96,
+      "to": "/"
+    },
+    {
+      "file": "\\pages\\auth\\ForgotPassword.tsx",
+      "line": 134,
+      "to": "/login"
+    },
+    {
+      "file": "\\pages\\auth\\ForgotPassword.tsx",
+      "line": 197,
+      "to": "/login"
+    },
+    {
+      "file": "\\pages\\auth\\ForgotPassword.tsx",
+      "line": 320,
+      "to": "/login"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 72,
+      "to": "/"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 119,
+      "to": "/register"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 188,
+      "to": "/forgot-password"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 231,
+      "to": "/"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 417,
+      "to": "/login"
+    },
+    {
+      "file": "\\pages\\classroom\\Classroom.tsx",
+      "line": 658,
+      "to": "/dashboard/sessions"
+    },
+    {
+      "file": "\\pages\\classroom\\Classroom.tsx",
+      "line": 715,
+      "to": "/dashboard"
+    },
+    {
+      "file": "\\pages\\classroom\\Classroom.tsx",
+      "line": 1415,
+      "to": "/dashboard/recordings"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 276,
+      "to": "/admin/communities"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 294,
+      "to": "/dashboard/communities"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 284,
+      "to": "/"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 299,
+      "to": "/dashboard/courses"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 1013,
+      "to": "/dashboard/courses"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 340,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 366,
+      "to": "/admin/communities"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 377,
+      "to": "/courses"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 575,
+      "to": "/courses"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 874,
+      "to": "/dashboard/sessions"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 883,
+      "to": "/classroom/session-101"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 923,
+      "to": "/dashboard/students"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 623,
+      "to": "/dashboard/sessions"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 810,
+      "to": "/dashboard/sessions"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 878,
+      "to": "/dashboard/billing"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 894,
+      "to": "/dashboard/students"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 938,
+      "to": "/dashboard/students"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 969,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 1090,
+      "to": "/communities"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 1229,
+      "to": "/dashboard/sessions"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 1378,
+      "to": "/dashboard/sessions"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 1399,
+      "to": "/dashboard/messages"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 1410,
+      "to": "/dashboard/messages"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 1441,
+      "to": "/courses"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 1477,
+      "to": "/dashboard/courses"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 955,
+      "to": "/dashboard/sessions"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 1371,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 501,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 652,
+      "to": "/dashboard/billing"
+    },
+    {
+      "file": "\\pages\\Landing.tsx",
+      "line": 42,
+      "to": "/courses"
+    },
+    {
+      "file": "\\pages\\Landing.tsx",
+      "line": 48,
+      "to": "/register?role=tutor"
+    },
+    {
+      "file": "\\pages\\Landing.tsx",
+      "line": 193,
+      "to": "/courses"
+    },
+    {
+      "file": "\\pages\\Landing.tsx",
+      "line": 325,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\pages\\Landing.tsx",
+      "line": 393,
+      "to": "/tutors/1"
+    },
+    {
+      "file": "\\pages\\Landing.tsx",
+      "line": 433,
+      "to": "/tutors/1"
+    },
+    {
+      "file": "\\pages\\Landing.tsx",
+      "line": 482,
+      "to": "/register"
+    },
+    {
+      "file": "\\pages\\NotFound.tsx",
+      "line": 9,
+      "to": "/"
+    },
+    {
+      "file": "\\pages\\NotFound.tsx",
+      "line": 58,
+      "to": "/dashboard"
+    },
+    {
+      "file": "\\pages\\NotFound.tsx",
+      "line": 65,
+      "to": "/"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 489,
+      "to": "/tutors"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 1182,
+      "to": "/classroom/1"
+    }
+  ],
+  "localStorages": [
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 41,
+      "text": "const saved = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 47,
+      "text": "const savedComm = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 58,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 70,
+      "text": "localStorage.removeItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 112,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 86,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 104,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 127,
+      "text": "localStorage.removeItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 154,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(updatedUser));"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 159,
+      "text": "const saved = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 165,
+      "text": "const savedComm = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 266,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(updatedUser));"
+    },
+    {
+      "file": "\\components\\layout\\Footer.tsx",
+      "line": 10,
+      "text": "const savedAuth = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 17,
+      "text": "const saved = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 29,
+      "text": "const savedAuth = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 36,
+      "text": "const savedComm = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 52,
+      "text": "localStorage.removeItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\layout\\ProtectedRoute.tsx",
+      "line": 11,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\layout\\ProtectedRoute.tsx",
+      "line": 28,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(user));"
+    },
+    {
+      "file": "\\components\\modals\\CreateCommunityModal.tsx",
+      "line": 95,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\modals\\CreateCommunityModal.tsx",
+      "line": 99,
+      "text": "const currentUserRole = authUser?.role || localStorage.getItem('akademi_user_role') || (communityType === 'Tutor Masterclass' ? 'tutor' : 'student');"
+    },
+    {
+      "file": "\\components\\modals\\SuperAdminAuthModal.tsx",
+      "line": 41,
+      "text": "const storedPass = localStorage.getItem('akademi_super_admin_pass') || 'admin123';"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 114,
+      "text": "const savedSlots = localStorage.getItem('akademi_tutor_available_slots');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 128,
+      "text": "const saved = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 136,
+      "text": "const saved = localStorage.getItem('akademi_student_reward_minutes');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 149,
+      "text": "const saved = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 151,
+      "text": "const savedMins = localStorage.getItem('akademi_student_reward_minutes');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 161,
+      "text": "const saved = localStorage.getItem('akademi_booked_sessions');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 171,
+      "text": "const saved = localStorage.getItem('akademi_booked_sessions');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 288,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBal));"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 293,
+      "text": "const existingTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 302,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([newTx, ...existingTx]));"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 313,
+      "text": "const require2FA = localStorage.getItem('akademi_require_payment_2fa') !== 'false';"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 326,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBalance));"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 332,
+      "text": "localStorage.setItem('akademi_student_reward_minutes', String(newRewardMinutes));"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 335,
+      "text": "const existing = JSON.parse(localStorage.getItem('akademi_booked_sessions') || '[]');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 359,
+      "text": "localStorage.setItem('akademi_booked_sessions', JSON.stringify([...newBookings, ...existing]));"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 363,
+      "text": "const existingTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 373,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([newTx, ...existingTx]));"
+    },
+    {
+      "file": "\\components\\ui\\ClassroomLobbyModal.tsx",
+      "line": 61,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\components\\ui\\ClassroomLobbyModal.tsx",
+      "line": 113,
+      "text": "const existing = JSON.parse(localStorage.getItem('akademi_admin_unlocked_sessions') || '[]');"
+    },
+    {
+      "file": "\\components\\ui\\ClassroomLobbyModal.tsx",
+      "line": 115,
+      "text": "localStorage.setItem('akademi_admin_unlocked_sessions', JSON.stringify([...existing, session.id]));"
+    },
+    {
+      "file": "\\components\\ui\\LessonNotesModal.tsx",
+      "line": 152,
+      "text": "const saved = localStorage.getItem('akademi_session_notes');"
+    },
+    {
+      "file": "\\components\\ui\\LessonNotesModal.tsx",
+      "line": 164,
+      "text": "localStorage.setItem('akademi_session_notes', JSON.stringify(current));"
+    },
+    {
+      "file": "\\context\\ThemeContext.tsx",
+      "line": 16,
+      "text": "const saved = localStorage.getItem('akademi_theme') as Theme | null;"
+    },
+    {
+      "file": "\\context\\ThemeContext.tsx",
+      "line": 28,
+      "text": "localStorage.setItem('akademi_theme', theme);"
+    },
+    {
+      "file": "\\lib\\sessionAccess.ts",
+      "line": 34,
+      "text": "const savedLead = localStorage.getItem('akademi_admin_lobby_lead_minutes');"
+    },
+    {
+      "file": "\\lib\\sessionAccess.ts",
+      "line": 37,
+      "text": "const savedGrace = localStorage.getItem('akademi_admin_lobby_grace_minutes');"
+    },
+    {
+      "file": "\\lib\\sessionAccess.ts",
+      "line": 40,
+      "text": "const savedBypass = localStorage.getItem('akademi_admin_bypass_lobby_lock');"
+    },
+    {
+      "file": "\\lib\\sessionAccess.ts",
+      "line": 43,
+      "text": "const savedUnlocked = localStorage.getItem('akademi_admin_unlocked_sessions');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 128,
+      "text": "const saved = localStorage.getItem('akademi_communities');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 147,
+      "text": "localStorage.setItem('akademi_communities', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 179,
+      "text": "const savedLogs = JSON.parse(localStorage.getItem('akademi_admin_audit_logs') || '[]');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 192,
+      "text": "localStorage.setItem('akademi_admin_audit_logs', JSON.stringify([spamLog, ...savedLogs]));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 22,
+      "text": "return localStorage.getItem('akademi_default_gateway_name') || 'Paystack';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 25,
+      "text": "return Number(localStorage.getItem('akademi_commission_rate') || 10);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 30,
+      "text": "const gw = localStorage.getItem('akademi_default_gateway_name');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 32,
+      "text": "const comm = localStorage.getItem('akademi_commission_rate');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 249,
+      "text": "const saved = localStorage.getItem('akademi_admin_gateways');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 256,
+      "text": "const savedUserTx = localStorage.getItem('akademi_user_transactions');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 280,
+      "text": "const savedUserTx = localStorage.getItem('akademi_user_transactions');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 311,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 322,
+      "text": "const saved = localStorage.getItem('akademi_payment_disputes');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 335,
+      "text": "const saved = localStorage.getItem('akademi_admin_audit_logs');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 365,
+      "text": "localStorage.setItem('akademi_admin_audit_logs', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 403,
+      "text": "localStorage.setItem('akademi_payment_disputes', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 421,
+      "text": "const curBal = Number(localStorage.getItem('akademi_wallet_balance_ngn') || 142500);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 422,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(curBal + target.amount));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 425,
+      "text": "const savedTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 434,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([refundTx, ...savedTx]));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 463,
+      "text": "const saved = localStorage.getItem('akademi_require_payment_2fa');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 476,
+      "text": "localStorage.setItem('akademi_require_payment_2fa', String(nextVal));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 494,
+      "text": "const curBal = Number(localStorage.getItem('akademi_wallet_balance_ngn') || 142500);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 495,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(curBal + amount));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 498,
+      "text": "const savedTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 507,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([refundRecord, ...savedTx]));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 553,
+      "text": "return Number(localStorage.getItem('akademi_commission_rate') || 10);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 564,
+      "text": "localStorage.setItem('akademi_admin_gateways', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 567,
+      "text": "localStorage.setItem('akademi_default_gateway_name', activeDef.name);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 692,
+      "text": "localStorage.setItem('akademi_commission_rate', String(commissionRate));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 698,
+      "text": "return localStorage.getItem('akademi_platform_payout_schedule') || 'Weekly (Every Friday at 4:00 PM)';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 701,
+      "text": "return Number(localStorage.getItem('akademi_min_payout_threshold') || 5000);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 705,
+      "text": "localStorage.setItem('akademi_min_payout_threshold', String(minPayoutThreshold));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminPayments.tsx",
+      "line": 706,
+      "text": "localStorage.setItem('akademi_platform_payout_schedule', platformPayoutSchedule);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminRecordings.tsx",
+      "line": 87,
+      "text": "return Number(localStorage.getItem('akademi_recording_monthly_fee') || 1500);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminRecordings.tsx",
+      "line": 99,
+      "text": "localStorage.setItem('akademi_recording_monthly_fee', String(monthlyStorageFee));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSessions.tsx",
+      "line": 82,
+      "text": "const existing = JSON.parse(localStorage.getItem('akademi_admin_unlocked_sessions') || '[]');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSessions.tsx",
+      "line": 84,
+      "text": "localStorage.setItem('akademi_admin_unlocked_sessions', JSON.stringify([...existing, id]));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 45,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 54,
+      "text": "return localStorage.getItem('akademi_brand_primary') || '#10B981';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 57,
+      "text": "return localStorage.getItem('akademi_brand_secondary') || '#F59E0B';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 69,
+      "text": "const saved = localStorage.getItem('akademi_session_type_settings');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 84,
+      "text": "return Number(localStorage.getItem('akademi_tokens_per_minute') || 10);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 87,
+      "text": "return Number(localStorage.getItem('akademi_referral_bonus_tokens') || 150);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 90,
+      "text": "return Number(localStorage.getItem('akademi_streak_bonus_tokens') || 50);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 95,
+      "text": "return Number(localStorage.getItem('akademi_admin_lobby_lead_minutes') || 5);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 98,
+      "text": "return Number(localStorage.getItem('akademi_admin_lobby_grace_minutes') || 30);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 101,
+      "text": "return localStorage.getItem('akademi_admin_bypass_lobby_lock') === 'true';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 114,
+      "text": "const saved = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 121,
+      "text": "localStorage.setItem('akademi_enable_communities', String(nextState));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 128,
+      "text": "return localStorage.getItem('akademi_email_provider') || 'SendGrid';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 131,
+      "text": "return localStorage.getItem('akademi_smtp_host') || 'smtp.sendgrid.net';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 134,
+      "text": "return Number(localStorage.getItem('akademi_smtp_port') || 587);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 137,
+      "text": "return localStorage.getItem('akademi_smtp_encryption') || 'TLS';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 140,
+      "text": "return localStorage.getItem('akademi_smtp_user') || 'apikey';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 143,
+      "text": "return localStorage.getItem('akademi_smtp_password') || 'SG.live_892348912389abcdef';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 146,
+      "text": "return localStorage.getItem('akademi_email_sender_name') || 'Akademi Platform';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 149,
+      "text": "return localStorage.getItem('akademi_email_sender_address') || 'no-reply@akademi.com';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 152,
+      "text": "return localStorage.getItem('akademi_email_reply_to') || 'support@akademi.com';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 160,
+      "text": "return localStorage.getItem('akademi_platform_favicon') || '';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 163,
+      "text": "return localStorage.getItem('akademi_platform_favicon_filename') || '';"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 190,
+      "text": "localStorage.setItem('akademi_platform_favicon', dataUrl);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 191,
+      "text": "localStorage.setItem('akademi_platform_favicon_filename', file.name);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 202,
+      "text": "localStorage.setItem('akademi_platform_favicon', presetDataUrl);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 203,
+      "text": "localStorage.setItem('akademi_platform_favicon_filename', name);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 212,
+      "text": "localStorage.removeItem('akademi_platform_favicon');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 213,
+      "text": "localStorage.removeItem('akademi_platform_favicon_filename');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 220,
+      "text": "localStorage.setItem('akademi_email_provider', emailProvider);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 221,
+      "text": "localStorage.setItem('akademi_smtp_host', smtpHost);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 222,
+      "text": "localStorage.setItem('akademi_smtp_port', String(smtpPort));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 223,
+      "text": "localStorage.setItem('akademi_smtp_encryption', smtpEncryption);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 224,
+      "text": "localStorage.setItem('akademi_smtp_user', smtpUsername);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 225,
+      "text": "localStorage.setItem('akademi_smtp_password', smtpPassword);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 226,
+      "text": "localStorage.setItem('akademi_email_sender_name', senderName);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 227,
+      "text": "localStorage.setItem('akademi_email_sender_address', senderEmail);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 228,
+      "text": "localStorage.setItem('akademi_email_reply_to', replyToEmail);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 253,
+      "text": "localStorage.setItem('akademi_admin_lobby_lead_minutes', String(lobbyLeadMinutes));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 254,
+      "text": "localStorage.setItem('akademi_admin_lobby_grace_minutes', String(lobbyGraceMinutes));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 255,
+      "text": "localStorage.setItem('akademi_admin_bypass_lobby_lock', String(bypassLobbyLock));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 261,
+      "text": "localStorage.setItem('akademi_brand_primary', primaryColor);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 262,
+      "text": "localStorage.setItem('akademi_brand_secondary', secondaryColor);"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 263,
+      "text": "localStorage.setItem('akademi_enable_communities', String(enableCommunities));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 264,
+      "text": "localStorage.setItem('akademi_session_type_settings', JSON.stringify(sessionTypeSettings));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 265,
+      "text": "localStorage.setItem('akademi_tokens_per_minute', String(tokensPerMinute));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 266,
+      "text": "localStorage.setItem('akademi_referral_bonus_tokens', String(referralBonusTokens));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 267,
+      "text": "localStorage.setItem('akademi_streak_bonus_tokens', String(streakBonusTokens));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 275,
+      "text": "localStorage.setItem('akademi_session_type_settings', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 283,
+      "text": "localStorage.setItem('akademi_session_type_settings', JSON.stringify(sessionTypeSettings));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 289,
+      "text": "localStorage.setItem('akademi_tokens_per_minute', String(tokensPerMinute));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 290,
+      "text": "localStorage.setItem('akademi_referral_bonus_tokens', String(referralBonusTokens));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 291,
+      "text": "localStorage.setItem('akademi_streak_bonus_tokens', String(streakBonusTokens));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 299,
+      "text": "localStorage.setItem('akademi_brand_primary', '#10B981');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminSettings.tsx",
+      "line": 300,
+      "text": "localStorage.setItem('akademi_brand_secondary', '#F59E0B');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminTutors.tsx",
+      "line": 139,
+      "text": "const reg = localStorage.getItem('akademi_registered_tutors');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminTutors.tsx",
+      "line": 164,
+      "text": "const saved = localStorage.getItem('akademi_admin_tutors');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminTutors.tsx",
+      "line": 196,
+      "text": "localStorage.setItem('akademi_admin_tutors', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminTutors.tsx",
+      "line": 200,
+      "text": "const savedReg = localStorage.getItem('akademi_registered_tutors');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminTutors.tsx",
+      "line": 214,
+      "text": "localStorage.setItem('akademi_registered_tutors', JSON.stringify(updatedReg));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminTutors.tsx",
+      "line": 220,
+      "text": "const authUserStr = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminTutors.tsx",
+      "line": 227,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(authUser));"
+    },
+    {
+      "file": "\\pages\\admin\\AdminUsers.tsx",
+      "line": 46,
+      "text": "const saved = localStorage.getItem('akademi_admin_users');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminUsers.tsx",
+      "line": 54,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\admin\\AdminUsers.tsx",
+      "line": 77,
+      "text": "localStorage.setItem('akademi_admin_users', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\auth\\ForgotPassword.tsx",
+      "line": 77,
+      "text": "const savedAuth = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\auth\\ForgotPassword.tsx",
+      "line": 81,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(parsed));"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 24,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(googleUser));"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 25,
+      "text": "localStorage.setItem('akademi_google_calendar_connected', 'true');"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 26,
+      "text": "localStorage.setItem('akademi_google_calendar_account', googleUser.email);"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 45,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(profile));"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 60,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(profile));"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 35,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(googleUser));"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 36,
+      "text": "localStorage.setItem('akademi_google_calendar_connected', 'true');"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 37,
+      "text": "localStorage.setItem('akademi_google_calendar_account', googleUser.email);"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 62,
+      "text": "const existingTutors = JSON.parse(localStorage.getItem('akademi_registered_tutors') || '[]');"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 63,
+      "text": "localStorage.setItem('akademi_registered_tutors', JSON.stringify([newTutorItem, ...existingTutors]));"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 102,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(authUser));"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 127,
+      "text": "const existingTutors = JSON.parse(localStorage.getItem('akademi_registered_tutors') || '[]');"
+    },
+    {
+      "file": "\\pages\\auth\\Register.tsx",
+      "line": 128,
+      "text": "localStorage.setItem('akademi_registered_tutors', JSON.stringify([newTutorItem, ...existingTutors]));"
+    },
+    {
+      "file": "\\pages\\classroom\\Classroom.tsx",
+      "line": 54,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\classroom\\Classroom.tsx",
+      "line": 332,
+      "text": "const recList = JSON.parse(localStorage.getItem('akademi_recorded_sessions') || '[]');"
+    },
+    {
+      "file": "\\pages\\classroom\\Classroom.tsx",
+      "line": 341,
+      "text": "localStorage.setItem('akademi_recorded_sessions', JSON.stringify([newRec, ...recList]));"
+    },
+    {
+      "file": "\\pages\\classroom\\Classroom.tsx",
+      "line": 368,
+      "text": "const recList = JSON.parse(localStorage.getItem('akademi_recorded_sessions') || '[]');"
+    },
+    {
+      "file": "\\pages\\classroom\\Classroom.tsx",
+      "line": 377,
+      "text": "localStorage.setItem('akademi_recorded_sessions', JSON.stringify([newRec, ...recList]));"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 22,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 147,
+      "text": "const saved = localStorage.getItem('akademi_communities');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 189,
+      "text": "const joined = JSON.parse(localStorage.getItem('akademi_joined_communities') || '[]');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 203,
+      "text": "const joined = JSON.parse(localStorage.getItem('akademi_joined_communities') || '[]');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 205,
+      "text": "localStorage.setItem('akademi_joined_communities', JSON.stringify(next));"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 215,
+      "text": "const joined = JSON.parse(localStorage.getItem('akademi_joined_communities') || '[]');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 218,
+      "text": "localStorage.setItem('akademi_joined_communities', JSON.stringify(joined));"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 254,
+      "text": "const saved = localStorage.getItem('akademi_communities');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 262,
+      "text": "localStorage.setItem('akademi_communities', JSON.stringify(all));"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 1948,
+      "text": "const saved = localStorage.getItem('akademi_booked_sessions');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 1964,
+      "text": "localStorage.setItem('akademi_booked_sessions', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 1967,
+      "text": "const curBal = Number(localStorage.getItem('akademi_wallet_balance_ngn') || 142500);"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 1969,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBal));"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 1971,
+      "text": "const txSaved = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 1980,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([tx, ...txSaved]));"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 1996,
+      "text": "const saved = localStorage.getItem('akademi_communities');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 2000,
+      "text": "localStorage.setItem('akademi_communities', JSON.stringify(updatedList));"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 2142,
+      "text": "const saved = localStorage.getItem('akademi_user_leaderboard_points');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 2149,
+      "text": "return localStorage.getItem('akademi_vip_grant_claimed') === 'true';"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 2166,
+      "text": "const curBal = Number(localStorage.getItem('akademi_wallet_balance_ngn') || 142500);"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 2168,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBal));"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 2169,
+      "text": "localStorage.setItem('akademi_vip_grant_claimed', 'true');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 2172,
+      "text": "const savedTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\community\\CommunityDetail.tsx",
+      "line": 2181,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([vipTx, ...savedTx]));"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 136,
+      "text": "const saved = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 147,
+      "text": "const savedBal = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 150,
+      "text": "const savedBookmarks = localStorage.getItem('akademi_bookmarked_courses');"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 154,
+      "text": "const savedAuth = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 171,
+      "text": "const existing = JSON.parse(localStorage.getItem('akademi_purchased_courses') || '[]');"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 185,
+      "text": "localStorage.setItem('akademi_purchased_courses', JSON.stringify([newEntry, ...existing]));"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 190,
+      "text": "const existingTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 199,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([newTx, ...existingTx]));"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 206,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBal));"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 243,
+      "text": "localStorage.setItem('akademi_bookmarked_courses', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 152,
+      "text": "const saved = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 158,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 167,
+      "text": "const saved = localStorage.getItem('akademi_tutor_kyc');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 180,
+      "text": "const saved = localStorage.getItem('akademi_min_payout_threshold');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 188,
+      "text": "const saved = localStorage.getItem('akademi_user_tokens');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 196,
+      "text": "const saved = localStorage.getItem('akademi_student_reward_minutes');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 203,
+      "text": "return localStorage.getItem('akademi_default_gateway_name') || 'Paystack';"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 217,
+      "text": "const saved = localStorage.getItem('akademi_booked_sessions');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 245,
+      "text": "const saved = localStorage.getItem('akademi_purchased_courses');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 272,
+      "text": "const saved = localStorage.getItem('akademi_user_transactions');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 309,
+      "text": "const saved = localStorage.getItem('akademi_tutor_payouts');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 326,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(balance));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 332,
+      "text": "const savedGw = localStorage.getItem('akademi_admin_gateways');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 345,
+      "text": "const savedBal = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 350,
+      "text": "const savedBookings = localStorage.getItem('akademi_booked_sessions');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 368,
+      "text": "const savedCourses = localStorage.getItem('akademi_purchased_courses');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 390,
+      "text": "const savedTx = localStorage.getItem('akademi_user_transactions');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 395,
+      "text": "const savedGwName = localStorage.getItem('akademi_default_gateway_name');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 420,
+      "text": "const require2FA = localStorage.getItem('akademi_require_payment_2fa') !== 'false';"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 436,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBal));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 449,
+      "text": "const existingTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 452,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify(updatedTx));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 490,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBal));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 502,
+      "text": "localStorage.setItem('akademi_tutor_payouts', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 514,
+      "text": "const existingTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Billing.tsx",
+      "line": 517,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify(updatedTx));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 155,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 164,
+      "text": "const saved = localStorage.getItem('akademi_communities');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 172,
+      "text": "const saved = localStorage.getItem('akademi_joined_communities');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 185,
+      "text": "const saved = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 191,
+      "text": "const savedComm = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 212,
+      "text": "localStorage.setItem('akademi_communities', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 223,
+      "text": "localStorage.setItem('akademi_joined_communities', JSON.stringify(updatedJoined));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 235,
+      "text": "localStorage.setItem('akademi_joined_communities', JSON.stringify(updatedJoined));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 253,
+      "text": "const is2FARequired = localStorage.getItem('akademi_require_payment_2fa') !== 'false';"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 264,
+      "text": "localStorage.setItem('akademi_joined_communities', JSON.stringify(updatedJoined));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 268,
+      "text": "const curBal = Number(localStorage.getItem('akademi_wallet_balance_ngn') || 142500);"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 270,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBal));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 273,
+      "text": "const savedTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 282,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([subTx, ...savedTx]));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 139,
+      "text": "const savedPurchased = localStorage.getItem('akademi_purchased_courses');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 169,
+      "text": "const saved = localStorage.getItem('akademi_bookmarked_courses');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 174,
+      "text": "const savedPurchased = localStorage.getItem('akademi_purchased_courses');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 199,
+      "text": "const savedAuth = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 222,
+      "text": "localStorage.setItem('akademi_bookmarked_courses', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 232,
+      "text": "const savedBal = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 237,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBal));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 254,
+      "text": "const existing = JSON.parse(localStorage.getItem('akademi_purchased_courses') || '[]');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 255,
+      "text": "localStorage.setItem('akademi_purchased_courses', JSON.stringify([newPurchased, ...existing]));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 260,
+      "text": "const existingTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 269,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([newTx, ...existingTx]));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 279,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 297,
+      "text": "const saved = localStorage.getItem('akademi_global_message_ledger');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 310,
+      "text": "const savedTutors = localStorage.getItem('akademi_registered_tutors');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 396,
+      "text": "const savedAuth = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 413,
+      "text": "const savedLedger = localStorage.getItem('akademi_global_message_ledger');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 428,
+      "text": "localStorage.setItem('akademi_global_message_ledger', JSON.stringify(newLedger));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Notifications.tsx",
+      "line": 70,
+      "text": "const saved = localStorage.getItem('akademi_user_notifications');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Notifications.tsx",
+      "line": 81,
+      "text": "localStorage.setItem('akademi_user_notifications', JSON.stringify(items));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 51,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 67,
+      "text": "const saved = localStorage.getItem('akademi_user_tokens');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 75,
+      "text": "const saved = localStorage.getItem('akademi_student_reward_minutes');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 83,
+      "text": "const saved = localStorage.getItem('akademi_tokens_per_minute');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 91,
+      "text": "const saved = localStorage.getItem('akademi_streak_bonus_tokens');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 99,
+      "text": "const saved = localStorage.getItem('akademi_referral_bonus_tokens');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 106,
+      "text": "const saved = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 189,
+      "text": "const saved = localStorage.getItem('akademi_messaged_students');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 199,
+      "text": "localStorage.setItem('akademi_messaged_students', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 207,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 212,
+      "text": "const savedMessaged = localStorage.getItem('akademi_messaged_students');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 217,
+      "text": "const savedTokens = localStorage.getItem('akademi_user_tokens');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 219,
+      "text": "const savedMins = localStorage.getItem('akademi_student_reward_minutes');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 221,
+      "text": "const savedRate = localStorage.getItem('akademi_tokens_per_minute');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 223,
+      "text": "const savedStreak = localStorage.getItem('akademi_streak_bonus_tokens');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 225,
+      "text": "const savedRef = localStorage.getItem('akademi_referral_bonus_tokens');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 230,
+      "text": "const savedBookings = localStorage.getItem('akademi_booked_sessions');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 252,
+      "text": "const savedComm = localStorage.getItem('akademi_enable_communities');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 274,
+      "text": "localStorage.setItem('akademi_user_tokens', String(nextTokens));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 275,
+      "text": "localStorage.setItem('akademi_student_reward_minutes', String(nextMinutes));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 279,
+      "text": "const existingTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 288,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([newTx, ...existingTx]));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 300,
+      "text": "localStorage.setItem('akademi_user_tokens', String(nextTokens));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 303,
+      "text": "const existingTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 312,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([newTx, ...existingTx]));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 391,
+      "text": "localStorage.setItem('akademi_tutor_availability', JSON.stringify({ availableDays, startTime, endTime, instantBook }));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 415,
+      "text": "const existing = JSON.parse(localStorage.getItem('akademi_tutor_courses') || '[]');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 416,
+      "text": "localStorage.setItem('akademi_tutor_courses', JSON.stringify([newCourse, ...existing]));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Overview.tsx",
+      "line": 431,
+      "text": "const savedBookings = localStorage.getItem('akademi_booked_sessions');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 109,
+      "text": "const saved = localStorage.getItem('akademi_recordings');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 124,
+      "text": "localStorage.setItem('akademi_recordings', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 138,
+      "text": "const savedBal = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 142,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(newBal));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 246,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 255,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 274,
+      "text": "return localStorage.getItem('akademi_google_calendar_connected') === 'true';"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 280,
+      "text": "return localStorage.getItem('akademi_google_calendar_account') || (user.role === 'tutor' ? 'dr.chiamaka.eze@gmail.com' : 'chiamaka.ada@gmail.com');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 302,
+      "text": "const saved = localStorage.getItem('akademi_session_type_settings');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 316,
+      "text": "const saved = localStorage.getItem('akademi_tutor_available_slots');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 339,
+      "text": "localStorage.setItem('akademi_tutor_available_slots', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 352,
+      "text": "localStorage.setItem('akademi_tutor_available_slots', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 359,
+      "text": "localStorage.setItem('akademi_tutor_available_slots', JSON.stringify(preferredSlots));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 418,
+      "text": "localStorage.removeItem('akademi_google_calendar_connected');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 428,
+      "text": "localStorage.setItem('akademi_google_calendar_connected', 'true');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 429,
+      "text": "localStorage.setItem('akademi_google_calendar_account', googleData.email);"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 447,
+      "text": "const saved = localStorage.getItem('akademi_booked_sessions');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Sessions.tsx",
+      "line": 456,
+      "text": "const saved = localStorage.getItem('akademi_booked_sessions');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 57,
+      "text": "const saved = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 90,
+      "text": "const savedToggles = localStorage.getItem('akademi_settings_notifications');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 106,
+      "text": "return localStorage.getItem('akademi_google_calendar_connected') === 'true';"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 112,
+      "text": "return localStorage.getItem('akademi_google_calendar_account') || (user.role === 'tutor' ? 'dr.chiamaka.eze@gmail.com' : 'chiamaka.ada@gmail.com');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 126,
+      "text": "localStorage.removeItem('akademi_google_calendar_connected');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 135,
+      "text": "localStorage.setItem('akademi_google_calendar_connected', 'true');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 136,
+      "text": "localStorage.setItem('akademi_google_calendar_account', googleData.email);"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 150,
+      "text": "const saved = localStorage.getItem('akademi_tutor_kyc');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 176,
+      "text": "const saved = localStorage.getItem('akademi_user_tokens') ?? localStorage.getItem('akademi_student_tokens');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 180,
+      "text": "const saved = localStorage.getItem('akademi_student_reward_minutes') ?? localStorage.getItem('akademi_student_free_minutes');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 188,
+      "text": "return Number(localStorage.getItem('akademi_tokens_per_minute') || 10);"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 199,
+      "text": "const tokens = localStorage.getItem('akademi_user_tokens');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 201,
+      "text": "const mins = localStorage.getItem('akademi_student_reward_minutes');"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 225,
+      "text": "localStorage.setItem('akademi_user_tokens', String(remainingTokens));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 226,
+      "text": "localStorage.setItem('akademi_student_reward_minutes', String(newTotalMinutes));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 238,
+      "text": "localStorage.setItem('akademi_settings_notifications', JSON.stringify(updated));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 249,
+      "text": "localStorage.setItem('akademi_tutor_kyc', JSON.stringify(kycData));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 307,
+      "text": "localStorage.setItem('akademi_auth_user', JSON.stringify(updatedUser));"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 331,
+      "text": "localStorage.clear();"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 951,
+      "text": "<span>{localStorage.getItem('akademi_platform_payout_schedule') || 'Weekly (Every Friday at 4:00 PM)'}</span>"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 962,
+      "text": "<span>₦{Number(localStorage.getItem('akademi_min_payout_threshold') || 5000).toLocaleString()} Minimum Balance</span>"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 217,
+      "text": "const saved = localStorage.getItem('akademi_session_type_settings');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 232,
+      "text": "const saved = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 242,
+      "text": "const savedBal = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 248,
+      "text": "const savedTypes = localStorage.getItem('akademi_session_type_settings');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 254,
+      "text": "const savedAuth = localStorage.getItem('akademi_auth_user');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 263,
+      "text": "const savedAdminTutors = localStorage.getItem('akademi_admin_tutors');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 275,
+      "text": "const savedReviews = localStorage.getItem(`akademi_tutor_reviews_${baseTutor.id}`);"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 303,
+      "text": "const existingBookings = JSON.parse(localStorage.getItem('akademi_booked_sessions') || '[]');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 322,
+      "text": "localStorage.setItem('akademi_booked_sessions', JSON.stringify([newBooking, ...existingBookings]));"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 327,
+      "text": "const savedSessions = localStorage.getItem('akademi_user_sessions');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 343,
+      "text": "localStorage.setItem('akademi_user_sessions', JSON.stringify([newSession, ...userSessions]));"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 348,
+      "text": "const existingTx = JSON.parse(localStorage.getItem('akademi_user_transactions') || '[]');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 357,
+      "text": "localStorage.setItem('akademi_user_transactions', JSON.stringify([newTx, ...existingTx]));"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 361,
+      "text": "localStorage.setItem('akademi_wallet_balance_ngn', String(updatedBal));"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 394,
+      "text": "const savedBal = localStorage.getItem('akademi_wallet_balance_ngn');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 429,
+      "text": "const saved = localStorage.getItem(`akademi_tutor_reviews_${baseTutor.id}`);"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 437,
+      "text": "localStorage.setItem(`akademi_tutor_reviews_${baseTutor.id}`, JSON.stringify(updatedUserReviews));"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 450,
+      "text": "const allRatings = JSON.parse(localStorage.getItem('akademi_tutors_ratings') || '{}');"
+    },
+    {
+      "file": "\\pages\\TutorProfile.tsx",
+      "line": 452,
+      "text": "localStorage.setItem('akademi_tutors_ratings', JSON.stringify(allRatings));"
+    },
+    {
+      "file": "\\pages\\Tutors.tsx",
+      "line": 143,
+      "text": "const savedReg = localStorage.getItem('akademi_registered_tutors');"
+    },
+    {
+      "file": "\\pages\\Tutors.tsx",
+      "line": 153,
+      "text": "const savedRatings = localStorage.getItem('akademi_tutors_ratings');"
+    },
+    {
+      "file": "\\pages\\Tutors.tsx",
+      "line": 171,
+      "text": "const savedAdminTutors = localStorage.getItem('akademi_admin_tutors');"
+    }
+  ],
+  "emptyClicks": [],
+  "missingClicks": [
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 284,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 299,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 315,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 322,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 329,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 339,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\AdminLayout.tsx",
+      "line": 361,
+      "text": "<button className=\"relative p-2 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100 transition-colors\">"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 333,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 397,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 438,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 448,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 475,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 485,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 495,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 509,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 539,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 590,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\DashboardLayout.tsx",
+      "line": 678,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 131,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 160,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\layout\\Navbar.tsx",
+      "line": 196,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\modals\\Payment2FAModal.tsx",
+      "line": 222,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 477,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 529,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 573,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 590,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 603,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 673,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 837,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 845,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 852,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 947,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 1019,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\BookingModal.tsx",
+      "line": 1027,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\ClassroomLobbyModal.tsx",
+      "line": 132,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\ClassroomLobbyModal.tsx",
+      "line": 193,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\ClassroomLobbyModal.tsx",
+      "line": 224,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\ClassroomLobbyModal.tsx",
+      "line": 234,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\Modal.tsx",
+      "line": 48,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\ReferralSnapcodeBadge.tsx",
+      "line": 93,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\ReferralSnapcodeBadge.tsx",
+      "line": 207,
+      "text": "<button"
+    },
+    {
+      "file": "\\components\\ui\\ReferralSnapcodeBadge.tsx",
+      "line": 215,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 298,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 425,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 440,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 455,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 465,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 506,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminCommunities.tsx",
+      "line": 550,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminOverview.tsx",
+      "line": 205,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminRecordings.tsx",
+      "line": 152,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminRecordings.tsx",
+      "line": 243,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\admin\\AdminRecordings.tsx",
+      "line": 315,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 207,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 219,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 231,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\auth\\Login.tsx",
+      "line": 243,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 322,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 356,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 415,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 423,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 457,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 507,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 514,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 583,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 599,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 623,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 631,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 701,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Courses.tsx",
+      "line": 709,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 405,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 435,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 448,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 481,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 500,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 519,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 544,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 708,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Communities.tsx",
+      "line": 717,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 429,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 542,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 599,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 640,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 671,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 721,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Courses.tsx",
+      "line": 728,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 1032,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Messages.tsx",
+      "line": 1139,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Notifications.tsx",
+      "line": 142,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Notifications.tsx",
+      "line": 156,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Notifications.tsx",
+      "line": 168,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Notifications.tsx",
+      "line": 231,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Notifications.tsx",
+      "line": 239,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 243,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 315,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 323,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 335,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 388,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 441,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Recordings.tsx",
+      "line": 448,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\dashboard\\Settings.tsx",
+      "line": 1147,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Tutors.tsx",
+      "line": 266,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Tutors.tsx",
+      "line": 282,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Tutors.tsx",
+      "line": 295,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Tutors.tsx",
+      "line": 344,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Tutors.tsx",
+      "line": 472,
+      "text": "<button"
+    },
+    {
+      "file": "\\pages\\Tutors.tsx",
+      "line": 490,
+      "text": "<button"
+    }
+  ],
+  "todos": []
+}

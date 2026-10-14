@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  
+  /* Brand Palette — Reference Exact */
+  --color-primary: #0F5338;
+  --color-primary-foreground: #ffffff;
+  --color-primary-hover: #0a3d29;
+  
+  --color-accent-green: #108a55;
+  --color-brand-cream: #FBF9F4;
+  --color-brand-dark: #0D3E2B;
+  
+  /* Background & Surface */
+  --color-background: #FBF9F4;
+  --color-foreground: #141E18;
+  --color-muted: #F3EFE6;
+  --color-muted-foreground: #6B7280;
+  --color-border: #E8E3D7;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #141E18;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, .font-serif-title {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Dark theme overrides */
+html.dark {
+  --color-background: #0B120E;
+  --color-foreground: #F3F7F5;
+  --color-muted: #15221B;
+  --color-muted-foreground: #94A3B8;
+  --color-border: #1E3127;
+  --color-card: #111D16;
+  --color-card-foreground: #F3F7F5;
+}
+
+html.dark body {
+  background-color: #0B120E;
+  color: #F3F7F5;
+}
+
+html.dark .bg-white {
+  background-color: #121E18 !important;
+  color: #F3F7F5 !important;
+}
+
+html.dark .bg-\[\#FBF9F4\] {
+  background-color: #0B120E !important;
+}
+
+html.dark .bg-\[\#FBF9F4\]\/40 {
+  background-color: rgba(11, 18, 14, 0.4) !important;
+}
+
+html.dark .bg-\[\#FBF9F4\]\/60 {
+  background-color: rgba(11, 18, 14, 0.6) !important;
+}
+
+html.dark .border-\[\#E8E3D7\] {
+  border-color: #1E3127 !important;
+}
+
+html.dark .border-\[\#E8E3D7\]\/60 {
+  border-color: rgba(30, 49, 39, 0.6) !important;
+}
+
+html.dark .text-\[\#141E18\] {
+  color: #F3F7F5 !important;
+}
+
+html.dark .text-slate-900 {
+  color: #F3F7F5 !important;
+}
+
+html.dark .text-slate-800 {
+  color: #E2E8F0 !important;
+}
+
+html.dark .text-slate-700 {
+  color: #CBD5E1 !important;
+}
+
+html.dark .text-slate-600 {
+  color: #94A3B8 !important;
+}
+
+html.dark .text-slate-500 {
+  color: #94A3B8 !important;
+}
+
+html.dark .text-slate-400 {
+  color: #64748B !important;
+}
+
+html.dark .divide-\[\#E8E3D7\] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1E3127 !important;
+}
+
+html.dark .divide-slate-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1E3127 !important;
+}
+
+html.dark .bg-slate-50 {
+  background-color: #15221B !important;
+}
+
+html.dark .bg-slate-100 {
+  background-color: #1A2A22 !important;
+}
+
+html.dark .border-slate-200 {
+  border-color: #1E3127 !important;
+}
+
+html.dark .border-slate-100 {
+  border-color: #1E3127 !important;
+}
+
+.bg-cream-canvas {
+  background-color: #FBF9F4;
+}
+
+.bg-brand-forest {
+  background-color: #0E4833;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d7d1c3; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #b8b09f; }
+html.dark ::-webkit-scrollbar-thumb { background: #1E3127; }
+html.dark ::-webkit-scrollbar-thumb:hover { background: #2B4638; }

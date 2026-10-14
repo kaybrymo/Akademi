@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akademi Community Architecture & Brand Guide</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+    :root {
+      --primary-forest: #0F5338;
+      --primary-dark: #0A3D29;
+      --primary-deep: #0E4833;
+      --accent-gold: #F59E0B;
+      --accent-gold-dark: #D97706;
+      --accent-gold-light: #FEF3C7;
+      --emerald-vibrant: #10B981;
+      --emerald-light: #D1FAE5;
+      --slate-950: #020617;
+      --slate-900: #0F172A;
+      --slate-800: #1E293B;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748B;
+      --slate-300: #CBD5E1;
+      --slate-200: #E2E8F0;
+      --slate-100: #F1F5F9;
+      --slate-50: #F8FAFC;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--slate-800);
+      background-color: #ffffff;
+      line-height: 1.6;
+      font-size: 13.5px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 16mm 14mm 16mm 14mm;
+    }
+
+    .page-break {
+      page-break-before: always;
+      break-before: page;
+      margin-top: 24px;
+    }
+
+    .avoid-break {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    /* Cover Page */
+    .cover {
+      min-height: 920px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 48px 40px;
+      background: linear-gradient(145deg, #0A3D29 0%, #0F5338 60%, #14724E 100%);
+      color: white;
+      border-radius: 24px;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover::after {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.25) 0%, rgba(245, 158, 11, 0) 70%);
+      border-radius: 50%;
+    }
+
+    .cover-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .brand-logo-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      font-size: 15px;
+    }
+
+    .brand-logo-dot {
+      width: 12px;
+      height: 12px;
+      background: var(--accent-gold);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent-gold);
+    }
+
+    .doc-meta-badge {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #FCD34D;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+
+    .cover-center {
+      margin: 80px 0;
+      z-index: 1;
+    }
+
+    .cover-title {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+    }
+
+    .cover-title span {
+      color: var(--accent-gold);
+    }
+
+    .cover-subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      color: #E2E8F0;
+      max-width: 620px;
+      line-height: 1.5;
+    }
+
+    .cover-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 24px;
+      z-index: 1;
+      font-size: 12px;
+      color: #CBD5E1;
+    }
+
+    .cover-specs {
+      display: flex;
+      gap: 24px;
+    }
+
+    .cover-spec-item strong {
+      display: block;
+      color: white;
+      font-size: 13px;
+    }
+
+    /* Headings & Document Sections */
+    h1, h2, h3, h4 {
+      color: var(--slate-950);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--slate-100);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 24px;
+      background: var(--primary-forest);
+      border-radius: 3px;
+    }
+
+    h2 {
+      font-size: 19px;
+      margin: 22px 0 10px 0;
+      color: var(--primary-forest);
+    }
+
+    h3 {
+      font-size: 15px;
+      margin: 16px 0 8px 0;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: var(--slate-700);
+    }
+
+    /* Swatch Grid */
+    .swatch-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 16px 0 24px 0;
+    }
+
+    .swatch-card {
+      border: 1px solid var(--slate-200);
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .swatch-preview {
+      height: 60px;
+      width: 100%;
+    }
+
+    .swatch-details {
+      padding: 10px;
+    }
+
+    .swatch-name {
+      font-weight: 700;
+      font-size: 12px;
+      color: var(--slate-950);
+      margin-bottom: 2px;
+    }
+
+    .swatch-hex {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--slate-500);
+      font-weight: 600;
+    }
+
+    .swatch-usage {
+      font-size: 10.5px;
+      color: var(--slate-600);
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+
+    /* Cards & Components */
+    .info-card {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+
+    .info-card-header {
+      font-weight: 700;
+      color: var(--primary-forest);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .badge-green {
+      background: var(--emerald-light);
+      color: #065F46;
+      border: 1px solid #A7F3D0;
+    }
+
+    .badge-amber {
+      background: var(--accent-gold-light);
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+
+    .badge-dark {
+      background: var(--primary-forest);
+      color: white;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 20px 0;
+      font-size: 12px;
+    }
+
+    th, td {
+      padding: 9px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--slate-200);
+    }
+
+    th {
+      background: var(--slate-100);
+      color: var(--slate-800);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 10.5px;
+      letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) td {
+      background: #FAFAFC;
+    }
+
+    /* Code Blocks */
+    pre, code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    pre {
+      background: #0B132B;
+      color: #E2E8F0;
+      padding: 14px;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-size: 11px;
+      line-height: 1.5;
+      margin: 12px 0 16px 0;
+      border: 1px solid #1E293B;
+    }
+
+    code {
+      background: var(--slate-100);
+      color: var(--primary-forest);
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+
+    pre code {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
+
+    /* 7-Tab Wireframe Visual */
+    .tabs-visual-bar {
+      display: flex;
+      gap: 6px;
+      background: white;
+      border: 1px solid var(--slate-200);
+      padding: 6px;
+      border-radius: 12px;
+      margin: 14px 0;
+      overflow: hidden;
+    }
+
+    .tab-visual-pill {
+      flex: 1;
+      text-align: center;
+      padding: 8px 4px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--slate-100);
+      color: var(--slate-700);
+    }
+
+    .tab-visual-pill.active {
+      background: var(--primary-forest);
+      color: white;
+      box-shadow: 0 2px 4px rgba(15, 83, 56, 0.3);
+    }
+
+    /* Wireframe Community Preview Card */
+    .community-wireframe {
+      border: 1px solid var(--slate-200);
+      border-radius: 16px;
+      background: white;
+      overflow: hidden;
+      margin: 16px 0 24px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    .cw-header {
+      height: 100px;
+      background: linear-gradient(135deg, #1E293B, #0F5338);
+      position: relative;
+      padding: 12px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .cw-body {
+      padding: 16px;
+      position: relative;
+    }
+
+    .cw-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: var(--accent-gold);
+      border: 3px solid white;
+      position: absolute;
+      top: -28px;
+      left: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--slate-950);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .cw-content {
+      margin-top: 32px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- COVER PAGE -->
+  <div class="cover">
+    <div class="cover-top">
+      <div class="brand-logo-pill">
+        <div class="brand-logo-dot"></div>
+        <span>AKADEMI</span>
+      </div>
+      <div class="doc-meta-badge">OFFICIAL SYSTEM SPECIFICATION</div>
+    </div>
+
+    <div class="cover-center">
+      <div style="font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #FCD34D; margin-bottom: 12px;">
+        COMMUNITY REPLICATION & BRAND BLUEPRINT
+      </div>
+      <h1 class="cover-title" style="border:none; padding:0; margin:0 0 16px 0;">
+        Skool-Style Community Architecture & <span>Brand Guide</span>
+      </h1>
+      <p class="cover-subtitle">
+        A complete technical guide to replicate the Akademi multi-tab community space, modular classroom, gamified leaderboard, live masterclasses, and verified brand identity.
+      </p>
+    </div>
+
+    <div class="cover-footer">
+      <div class="cover-specs">
+        <div class="cover-spec-item">
+          <strong>Primary Palette</strong>
+          Forest Emerald (#0F5338) & Gold (#F59E0B)
+        </div>
+        <div class="cover-spec-item">
+          <strong>Architecture</strong>
+          7-Tab Skool Model + WebRTC SFU
+        </div>
+        <div class="cover-spec-item">
+          <strong>Monetization</strong>
+          Paystack Subscriptions & Tokens (NGN)
+        </div>
+      </div>
+      <div>
+        <strong>Version 2.4.0</strong> • October 2026
+      </div>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="avoid-break" style="padding: 20px 0; margin-bottom: 20px;">
+    <h1>Document Table of Contents</h1>
+    <div class="grid-2" style="margin-top: 16px;">
+      <div class="info-card">
+        <div class="info-card-header">PART 1: BRAND IDENTITY & DESIGN SYSTEM</div>
+        <p style="font-size: 12px; margin-bottom: 4px;"><strong>1.1</strong> Visual Philosophy & Principles</p>
+        <p style="font-size: 12px; margin-bottom: 4px;"><strong>1.2</strong> Complete Color Palette & Token Swatches</p>
+        <p style="font-size: 12px; margin-bottom: 4px;"><strong>1.3</strong> Typography Scale & Hierarchy</p>
+        <p style="font-size: 12px; margin-bottom: 4px;"><strong>1.4</strong> UI Component Specs (Buttons, Badges, Cards)</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-header">PART 2: COMMUNITY TECHNICAL ARCHITECTURE</div>
+        <p style="font-size: 12px; margin-bottom: 4px;"><strong>2.1</strong> System Overview & 7-Tab Layout</p>
+        <p style="font-size: 12px; margin-bottom: 4px;"><strong>2.2</strong> Database Schema & Entity Relationships</p>
+        <p style="font-size: 12px; margin-bottom: 4px;"><strong>2.3</strong> REST Endpoints & WebSocket Events</p>
+        <p style="font-size: 12px; margin-bottom: 4px;"><strong>2.4</strong> Step-by-Step Replication Roadmap</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- SECTION 1: BRAND GUIDE & COLOR SYSTEM -->
+  <h1>Part 1: Brand Identity & Design System</h1>
+  <p>
+    The Akademi visual language balances <strong>academic prestige, mentorship trust, and gamified achievement</strong>. It is optimized for clarity across both high-end desktop monitors and mobile devices on Nigerian cellular networks.
+  </p>
+
+  <h2>1.1 Primary & Accent Color Palette</h2>
+
+  <div class="swatch-grid">
+    <div class="swatch-card">
+      <div class="swatch-preview" style="background: #0F5338;"></div>
+      <div class="swatch-details">
+        <div class="swatch-name">Forest Emerald (Core)</div>
+        <div class="swatch-hex">#0F5338</div>
+        <div class="swatch-usage">Primary brand color, headers, primary buttons, active tabs.</div>
+      </div>
+    </div>
+
+    <div class="swatch-card">
+      <div class="swatch-preview" style="background: #0A3D29;"></div>
+      <div class="swatch-details">
+        <div class="swatch-name">Dark Forest Emerald</div>
+        <div class="swatch-hex">#0A3D29</div>
+        <div class="swatch-usage">Navbar background, active hover states, deep borders.</div>
+      </div>
+    </div>
+
+    <div class="swatch-card">
+      <div class="swatch-preview" style="background: #F59E0B;"></div>
+      <div class="swatch-details">
+        <div class="swatch-name">Radiant Gold (Core)</div>
+        <div class="swatch-hex">#F59E0B</div>
+        <div class="swatch-usage">High-conversion CTA buttons, reward tokens, streak badges.</div>
+      </div>
+    </div>
+
+    <div class="swatch-card">
+      <div class="swatch-preview" style="background: #10B981;"></div>
+      <div class="swatch-details">
+        <div class="swatch-name">Vibrant Emerald</div>
+        <div class="swatch-hex">#10B981</div>
+        <div class="swatch-usage">Live indicators, verified badges, success state alerts.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swatch-grid">
+    <div class="swatch-card">
+      <div class="swatch-preview" style="background: #020617;"></div>
+      <div class="swatch-details">
+        <div class="swatch-name">Slate 950</div>
+        <div class="swatch-hex">#020617</div>
+        <div class="swatch-usage">Primary page headings, highest-emphasis typography.</div>
+      </div>
+    </div>
+
+    <div class="swatch-card">
+      <div class="swatch-preview" style="background: #64748B;"></div>
+      <div class="swatch-details">
+        <div class="swatch-name">Slate 500</div>
+        <div class="swatch-hex">#64748B</div>
+        <div class="swatch-usage">Timestamps, metadata subtitles, inactive icons.</div>
+      </div>
+    </div>
+
+    <div class="swatch-card">
+      <div class="swatch-preview" style="background: #D1FAE5; border-bottom: 1px solid #A7F3D0;"></div>
+      <div class="swatch-details">
+        <div class="swatch-name">Soft Emerald 100</div>
+        <div class="swatch-hex">#D1FAE5</div>
+        <div class="swatch-usage">Verified tutor badge background, free tier pills.</div>
+      </div>
+    </div>
+
+    <div class="swatch-card">
+      <div class="swatch-preview" style="background: #FEF3C7; border-bottom: 1px solid #FDE68A;"></div>
+      <div class="swatch-details">
+        <div class="swatch-name">Amber Light 100</div>
+        <div class="swatch-hex">#FEF3C7</div>
+        <div class="swatch-usage">Paid membership tag, token counter backgrounds.</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>1.2 Typography Hierarchy</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Role</th>
+        <th>Size</th>
+        <th>Weight</th>
+        <th>Tracking</th>
+        <th>Application</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Display Title</strong></td>
+        <td>32px - 40px</td>
+        <td>Bold (800)</td>
+        <td>-0.025em</td>
+        <td>Landing page headlines, Hero banners</td>
+      </tr>
+      <tr>
+        <td><strong>Section Heading (H1)</strong></td>
+        <td>24px - 28px</td>
+        <td>Bold (700)</td>
+        <td>-0.02em</td>
+        <td>Community titles, Dashboard views</td>
+      </tr>
+      <tr>
+        <td><strong>Card Title (H2)</strong></td>
+        <td>18px - 20px</td>
+        <td>Semi-Bold (600)</td>
+        <td>-0.015em</td>
+        <td>Module headers, Event modal titles</td>
+      </tr>
+      <tr>
+        <td><strong>Post / Item Title (H3)</strong></td>
+        <td>15px - 16px</td>
+        <td>Semi-Bold (600)</td>
+        <td>-0.01em</td>
+        <td>Feed discussion post titles, Lesson items</td>
+      </tr>
+      <tr>
+        <td><strong>Body Standard</strong></td>
+        <td>13.5px - 14px</td>
+        <td>Regular (400)</td>
+        <td>normal</td>
+        <td>Post content, comments, descriptions</td>
+      </tr>
+      <tr>
+        <td><strong>Caption / Metadata</strong></td>
+        <td>11px - 12px</td>
+        <td>Medium (500)</td>
+        <td>normal</td>
+        <td>Timestamps, author subtitles, prices</td>
+      </tr>
+      <tr>
+        <td><strong>Badge / Tag Pill</strong></td>
+        <td>10.5px</td>
+        <td>Bold (700)</td>
+        <td>0.05em (caps)</td>
+        <td>Categories, "VERIFIED", "PAID NGN 4,500/MO"</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>1.3 UI Component Styling Guide</h2>
+  <div class="grid-2">
+    <div class="info-card">
+      <div class="info-card-header">Button Specs</div>
+      <div style="margin: 10px 0; display: flex; flex-direction: column; gap: 8px;">
+        <div style="background: #0F5338; color: white; padding: 8px 16px; border-radius: 10px; font-weight: 700; text-align: center; font-size: 12px;">
+          Primary Brand Action (#0F5338)
+        </div>
+        <div style="background: #F59E0B; color: #020617; padding: 8px 16px; border-radius: 999px; font-weight: 800; text-align: center; font-size: 12px;">
+          High-Conversion CTA (#F59E0B)
+        </div>
+        <div style="background: white; border: 1px solid #CBD5E1; color: #334155; padding: 8px 16px; border-radius: 10px; font-weight: 600; text-align: center; font-size: 12px;">
+          Secondary Outlined Button
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="info-card-header">Badge & Indicator Pills</div>
+      <div style="margin: 10px 0; display: flex; flex-wrap: wrap; gap: 6px;">
+        <span class="badge-pill badge-green">✓ Verified Tutor</span>
+        <span class="badge-pill badge-amber">🔒 Paid • ₦4,500/mo</span>
+        <span class="badge-pill badge-green">● Free Community</span>
+        <span class="badge-pill badge-dark">Level 4 Scholar</span>
+        <span class="badge-pill" style="background:#FEE2E2; color:#991B1B;">● LIVE NOW</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- SECTION 2: COMMUNITY SYSTEM ARCHITECTURE -->
+  <h1>Part 2: Community Technical Architecture</h1>
+  <p>
+    The Akademi Community subsystem elevates tutoring from isolated video calls into an **active, sticky learning mastermind**. It combines discussions, course lessons, calendar events, resident tutors, and AI coaching.
+  </p>
+
+  <h2>2.1 Skool-Style 7-Tab Navigation Architecture</h2>
+  <div class="tabs-visual-bar">
+    <div class="tab-visual-pill active">💬 1. Community Feed</div>
+    <div class="tab-visual-pill">📚 2. Classroom</div>
+    <div class="tab-visual-pill">📅 3. Calendar & Live</div>
+    <div class="tab-visual-pill">👨‍🏫 4. Tutors & TAs</div>
+    <div class="tab-visual-pill">🏆 5. Leaderboard</div>
+    <div class="tab-visual-pill">🤖 6. Maya AI Bot</div>
+    <div class="tab-visual-pill">⚙️ 7. Creator Studio</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tab</th>
+        <th>Purpose</th>
+        <th>Key Sub-Features & Components</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. Community</strong></td>
+        <td>Peer Discussion & Social Feed</td>
+        <td>Rich post composer, tags (<code>#General</code>, <code>#Q&A</code>), upvotes, threaded comments, pinned announcements, author level badges.</td>
+      </tr>
+      <tr>
+        <td><strong>2. Classroom</strong></td>
+        <td>Structured Modular Curriculum</td>
+        <td>Accordion modules, video lessons with duration badges, PDF/doc worksheets, quizzes, progress checkmarks, completion XP.</td>
+      </tr>
+      <tr>
+        <td><strong>3. Events</strong></td>
+        <td>Live Masterclasses & Calendar</td>
+        <td>Upcoming live sessions, 1-click meeting join (<code>/classroom/meeting-...</code>), Google Calendar 2-way sync, countdown timers.</td>
+      </tr>
+      <tr>
+        <td><strong>4. Experts</strong></td>
+        <td>Resident Tutors & Mentors</td>
+        <td>Directory of verified instructors, hourly rates in Naira (<code>₦6,500/hr</code>), star ratings, 1:1 booking CTA, direct messaging.</td>
+      </tr>
+      <tr>
+        <td><strong>5. Leaderboard</strong></td>
+        <td>Gamification & Token Economy</td>
+        <td>7-day, 30-day, and all-time student rankings, levels (Novice to Grandmaster), daily login streaks, token conversion to free tutoring.</td>
+      </tr>
+      <tr>
+        <td><strong>6. Maya AI</strong></td>
+        <td>24/7 Contextual Study Bot</td>
+        <td>Subject-specific AI tutor answering curriculum doubts, providing practice questions, and explaining past exams.</td>
+      </tr>
+      <tr>
+        <td><strong>7. Studio</strong></td>
+        <td>Creator & Admin Governance</td>
+        <td>Subscription revenue tracking (MRR in NGN), member approval/banning, lesson creator modal, community configuration.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>2.2 Database Schema (SQL Blueprint)</h2>
+  <pre><code>-- Core Communities
+CREATE TABLE communities (
+    id VARCHAR(64) PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    slug VARCHAR(255) UNIQUE NOT NULL,
+    tagline VARCHAR(255),
+    description TEXT,
+    category VARCHAR(100) NOT NULL,
+    community_type VARCHAR(50) DEFAULT 'Tutor Masterclass',
+    access_type VARCHAR(20) DEFAULT 'paid', -- 'free' | 'paid'
+    monthly_price DECIMAL(10, 2) DEFAULT 0.00,
+    currency VARCHAR(10) DEFAULT 'NGN',
+    cover_image_url TEXT,
+    avatar_url TEXT,
+    creator_id VARCHAR(64) NOT NULL REFERENCES users(id),
+    is_verified BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Discussion Feed Posts
+CREATE TABLE community_posts (
+    id VARCHAR(64) PRIMARY KEY,
+    community_id VARCHAR(64) NOT NULL REFERENCES communities(id) ON DELETE CASCADE,
+    author_id VARCHAR(64) NOT NULL REFERENCES users(id),
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    category_tag VARCHAR(50) DEFAULT '#General',
+    is_pinned BOOLEAN DEFAULT FALSE,
+    upvotes_count INT DEFAULT 0,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Course Curriculum Modules & Lessons
+CREATE TABLE community_modules (
+    id VARCHAR(64) PRIMARY KEY,
+    community_id VARCHAR(64) NOT NULL REFERENCES communities(id) ON DELETE CASCADE,
+    title VARCHAR(255) NOT NULL,
+    order_index INT NOT NULL DEFAULT 0
+);
+
+CREATE TABLE community_lessons (
+    id VARCHAR(64) PRIMARY KEY,
+    module_id VARCHAR(64) NOT NULL REFERENCES community_modules(id) ON DELETE CASCADE,
+    title VARCHAR(255) NOT NULL,
+    lesson_type VARCHAR(30) DEFAULT 'video', -- 'video' | 'doc' | 'quiz'
+    duration_label VARCHAR(50),
+    video_url TEXT,
+    order_index INT NOT NULL DEFAULT 0
+);</code></pre>
+
+  <div class="page-break"></div>
+
+  <h2>2.3 Replication Roadmap & Implementation Plan</h2>
+
+  <div class="info-card">
+    <div class="info-card-header">Step 1: Set Up Backend Models & REST Routes</div>
+    <p>
+      Create database tables for <code>communities</code>, <code>community_members</code>, <code>community_posts</code>, <code>community_modules</code>, and <code>community_events</code>. Expose REST endpoints for list, get by slug/id, post creation, upvote toggle, and lesson progress.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-header">Step 2: Build the Hub / Discovery View (`Communities.tsx`)</div>
+    <p>
+      Implement search, category tabs (Data & Tech, Math & Sciences, Languages), free/paid filter pills, and community cards with member counts and prices in Naira (<code>₦4,500/mo</code>). Include a "Create New Community" modal for tutors and admins.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-header">Step 3: Construct the 7-Tab Space (`CommunityDetail.tsx`)</div>
+    <p>
+      Assemble the hero cover banner, sticky tab bar, and dynamic active view renderer. Ensure discussions allow markdown, comments, and upvotes with optimistic UI updates.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-header">Step 4: Integrate Paystack Subscription Flow</div>
+    <p>
+      For paid communities, initialize Paystack transaction with <code>transaction_type = 'community_membership_subscription'</code>. Upon verification via webhook, grant member access for 30 days.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-header">Step 5: Connect Live Events to WebRTC Classroom</div>
+    <p>
+      When an event is scheduled, attach a <code>meeting_room_id</code>. Wire the "Join Live Room" button to launch the full-screen video classroom at <code>/classroom/:sessionId</code> with lobby countdown gates.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-header">Step 6: Gamification & Token-to-Tutoring Conversion</div>
+    <p>
+      Award 15 XP for lesson completions and 10 XP for discussions. Enable learners to convert 100 accumulated tokens into 30 minutes of free 1-on-1 tutoring sessions with verified platform tutors.
+    </p>
+  </div>
+
+  <div style="margin-top: 30px; text-align: center; color: var(--slate-500); font-size: 11px;">
+    Akademi EdTech Platform • Engineered for Pan-African Academic Excellence • Confidential
+  </div>
+
+</body>
+</html>
