@@ -29,8 +29,7 @@ import Settings from '@/pages/dashboard/Settings';
 import Recordings from '@/pages/dashboard/Recordings';
 import Students from '@/pages/dashboard/Students';
 import Notifications from '@/pages/dashboard/Notifications';
-import Communities from '@/pages/dashboard/Communities';
-import CommunityDetail from '@/pages/community/CommunityDetail';
+import CommunityRedirect from '@/components/layout/CommunityRedirect';
 
 // Admin pages — lazy loaded
 import { lazy, Suspense } from 'react';
@@ -41,7 +40,6 @@ const AdminTutors     = lazy(() => import('@/pages/admin/AdminTutors'));
 const AdminSessions   = lazy(() => import('@/pages/admin/AdminSessions'));
 const AdminSubjects   = lazy(() => import('@/pages/admin/AdminSubjects'));
 const AdminPayments   = lazy(() => import('@/pages/admin/AdminPayments'));
-const AdminCommunities= lazy(() => import('@/pages/admin/AdminCommunities'));
 const AdminSettings   = lazy(() => import('@/pages/admin/AdminSettings'));
 const AdminRecordings = lazy(() => import('@/pages/admin/AdminRecordings'));
 
@@ -65,10 +63,6 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Landing />} />
             <Route path="/courses" element={<Courses />} />
-            <Route path="/communities" element={<Communities />} />
-            <Route path="/community" element={<Communities />} />
-            <Route path="/communities/:id" element={<CommunityDetail />} />
-            <Route path="/community/:id" element={<CommunityDetail />} />
             <Route path="/tutors" element={<Tutors />} />
             <Route path="/tutors/:id" element={<TutorProfile />} />
             <Route path="/tutor/:id" element={<TutorProfile />} />
@@ -104,10 +98,6 @@ function App() {
             <Route index element={<Overview />} />
             <Route path="sessions" element={<Sessions />} />
             <Route path="students" element={<Students />} />
-            <Route path="communities" element={<Communities />} />
-            <Route path="community" element={<Communities />} />
-            <Route path="communities/:id" element={<CommunityDetail />} />
-            <Route path="community/:id" element={<CommunityDetail />} />
             <Route path="recordings" element={<Recordings />} />
             <Route path="courses" element={<DashboardCourses />} />
             <Route path="learning-profile" element={<DashboardCourses />} />
@@ -135,12 +125,18 @@ function App() {
             <Route path="sessions" element={<Suspense fallback={<LoadingSpinner />}><AdminSessions /></Suspense>} />
             <Route path="recordings" element={<Suspense fallback={<LoadingSpinner />}><AdminRecordings /></Suspense>} />
             <Route path="subjects" element={<Suspense fallback={<LoadingSpinner />}><AdminSubjects /></Suspense>} />
-            <Route path="communities" element={<Suspense fallback={<LoadingSpinner />}><AdminCommunities /></Suspense>} />
             <Route path="payments" element={<Suspense fallback={<LoadingSpinner />}><AdminPayments /></Suspense>} />
             <Route path="settings" element={<Suspense fallback={<LoadingSpinner />}><AdminSettings /></Suspense>} />
           </Route>
 
           {/* 404 — catch-all */}
+          {/* Communities are a separate app now */}
+          <Route path="/communities/*" element={<CommunityRedirect />} />
+          <Route path="/community/*" element={<CommunityRedirect />} />
+          <Route path="/dashboard/communities/*" element={<CommunityRedirect />} />
+          <Route path="/dashboard/community/*" element={<CommunityRedirect />} />
+          <Route path="/admin/communities" element={<CommunityRedirect />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

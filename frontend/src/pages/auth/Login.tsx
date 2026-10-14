@@ -13,6 +13,7 @@ import {
   Sparkles,
   ArrowLeft
 } from 'lucide-react';
+import { apiEnabled, apiLogin, apiErrorMessage } from '@/lib/api';
 import GoogleAuthModal, { GoogleLogo } from '@/components/ui/GoogleAuthModal';
 
 export default function Login() {
@@ -22,6 +23,8 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(true);
   const [isGoogleModalOpen, setIsGoogleModalOpen] = useState(false);
+  const [authError, setAuthError] = useState('');
+  const [submitting, setSubmitting] = useState(false);
   const [activeRoleTab, setActiveRoleTab] = useState<'student' | 'tutor' | 'admin' | 'super_admin'>('student');
 
   const ROLE_MAP: Record<string, { name: string; role: string; initials: string; title: string; avatar: string }> = {
@@ -41,9 +44,13 @@ export default function Login() {
     navigate('/dashboard');
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const key = email.toLowerCase().trim();
+  const finishLogin = (profile: { role: string }) => {
+    window.dispatchEvent(new Event('storage'));
+    if (profile.role === 'admin' || profile.role === 'super_admin') navigate('/admin');
+    else navigate('/dashboard');
+  };
+
+  const demoLogin = (key: string) => {
     const match = ROLE_MAP[key];
     const fallbackRole = key.includes('tutor') ? 'tutor' : 'student';
     const authUser = match ?? {
@@ -56,10 +63,30 @@ export default function Login() {
     };
     const profile = { ...authUser, email: key };
     localStorage.setItem('akademi_auth_user', JSON.stringify(profile));
-    window.dispatchEvent(new Event('storage'));
-    const role = profile.role;
-    if (role === 'admin' || role === 'super_admin') navigate('/admin');
-    else navigate('/dashboard');
+    finishLogin(profile);
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const key = email.toLowerCase().trim();
+    setAuthError('');
+
+    // Built-in demo accounts always work; everything else goes to the API when configured.
+    if (!apiEnabled || ROLE_MAP[key]) {
+      demoLogin(key);
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const profile = await apiLogin(key, password);
+      localStorage.setItem('akademi_auth_user', JSON.stringify(profile));
+      finishLogin(profile);
+    } catch (err) {
+      setAuthError(apiErrorMessage(err, 'Invalid email or password.'));
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const quickLogin = (loginEmail: string, roleKey: 'student' | 'tutor' | 'admin' | 'super_admin') => {
@@ -266,11 +293,18 @@ export default function Login() {
               </label>
             </div>
 
+            {authError && (
+              <p role="alert" className="text-xs font-semibold text-rose-600 bg-rose-50 border border-rose-100 rounded-xl px-3 py-2">
+                {authError}
+              </p>
+            )}
+
             <button 
               type="submit" 
-              className="w-full bg-[#0F5338] hover:bg-[#0A3D29] text-white rounded-2xl h-12 font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 mt-4 active:scale-[0.98] cursor-pointer"
+              disabled={submitting}
+              className="w-full bg-[#0F5338] hover:bg-[#0A3D29] disabled:opacity-60 text-white rounded-2xl h-12 font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 mt-4 active:scale-[0.98] cursor-pointer"
             >
-              <span>Sign In to Account</span>
+              <span>{submitting ? 'Signing in…' : 'Sign In to Account'}</span>
               <ArrowRight className="h-4 w-4" />
             </button>
           </form>
